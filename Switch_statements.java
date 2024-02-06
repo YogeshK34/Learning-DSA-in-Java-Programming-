@@ -1,26 +1,50 @@
 import java.util.Scanner;
 public class Switch_statements {
     public static void main(String[] args) {
+        /*
+        sytnax is: 
+        switch(expression) {
+        case value1:
+            // code block
+            break;
+        case value2:
+            // code block
+            break;
+  // we can have any number of case statments.
+        default:
+        // code block
+}
+        */
         Scanner sc = new Scanner(System.in);
-        System.out.print("Enter the team name to know the homeground: ");
+        System.out.print("Enter the team name to know the home ground: ");
         String ipl = sc.next();
         switch (ipl) {
-            case "RCB" -> System.out.println("Chinnaswamy");
-            case "CSK" -> System.out.println("M Chidambaram");
-            case "MI" -> System.out.println("Wankhede");
-            case "PBKS" -> System.out.println("Mohali");
-            case "KKR" -> System.out.println("Eden Gardens");
-            case "GG" -> System.out.println("Modi");
-            case "DC" -> System.out.println("Arun Jaitley");
-            default -> System.out.println("Please enter a a valid team!");
+            case "RCB":
+                System.out.println("Chinnaswamy");
+                break;
+            case "CSK":
+                System.out.println("M Chidambaram");
+                break;
+            case "MI":
+                System.out.println("Wankhede");
+                break;
+            case "PBKS":
+                System.out.println("Mohali");
+                break;
+            case "KKR":
+                System.out.println("Eden Gardens");
+                break;
+            case "GG":
+                System.out.println("Modi");
+                break;
+            case "DC":
+                System.out.println("Arun Jaitley");
+                break;
+            default:
+                System.out.println("Please enter a a valid team!");
+                break;
         }
-        System.out.print("Enter which ball you wanna play with: ");
-        String ball = sc.next();
-        switch (ball) {
-            case "white" -> System.out.println("Used in ODI's and T20's");
-            case "red" -> System.out.println("Used in Test cricket");
-            case "pink" -> System.out.println("Used in Day/Night Test cricket");
-            default -> System.out.println("Please enter a valid ball!");
-        }
+        /*So in the above mentioned program when user enters one of the team then the value attached to the team will be executed but we also have
+        to make sure to put a break after every switch case or else the interpreter will check all the cases until the default case */
     }
 }
