@@ -6,6 +6,11 @@ public class Nested_switch{
         System.out.print("Which format you wanna play?");
         String format  = sc.next();
         String series = sc.next();
+        /*
+        So in nested switch cases we have switch inside a switch just like in below code as when user will enter format and series he/she
+        can get the value attached to the data item and the nested switch can be written like this/syntax of nested switch is preetty much 
+        same like in the switch cases
+        */
         switch (format) {
             case "T20":
                 switch (series) {
